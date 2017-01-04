@@ -3,19 +3,27 @@
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <h2>{{ text }}</h2>
+    <h3>{{ text2 }}</h3>
     <form class="user-input-form">
       <input type="text" id="user-input" placeholder="message">
+      <button>send</button>
     </form>
-
+  </div>
 </template>
 
 <script>
+// import Crap from './Crap.vue'
+
 export default {
+  // components: {
+  //   Crap
+  // },
   name: 'app',
   data () {
     return {
       msg: 'This is not the framework you\'re looking for',
-      text: 'Maybe you should text a friend...'
+      text: 'Maybe you should text a friend...',
+      text2: 'Or not...'
     }
   }
 }
