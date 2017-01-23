@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
+import Crap from './Crap.vue'
 
 new Vue({
-  el: '#app',
+  el: '#something',
   render: h => h(App)
 })

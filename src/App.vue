@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png"> -->
     <h1>{{ msg }}</h1>
     <h2>{{ text }}</h2>
     <h3>{{ text2 }}</h3>
+    <!-- <something></something> -->
     <form class="user-input-form">
       <input type="text" id="user-input" placeholder="message">
       <button>send</button>
@@ -15,9 +16,7 @@
 // import Crap from './Crap.vue'
 
 export default {
-  // components: {
-  //   Crap
-  // },
+
   name: 'app',
   data () {
     return {
