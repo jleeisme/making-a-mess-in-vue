@@ -5,11 +5,9 @@
     <h2>{{ text }}</h2>
     <h3>{{ text2 }}</h3>
     <h2>{{ hey }}</h2>
+    <app-crap></app-crap>
     <!-- <something></something> -->
-    <form class="user-input-form">
-      <input type="text" id="user-input" placeholder="no typing" v-on:keyup="pressed">
-      <button>send</button>
-    </form>
+    
   </div>
 </template>
 
@@ -22,10 +20,10 @@ export default {
   props: {
     hey: {
       type: String,
-      default: 'I\'m in the props'
+      default: 'I\'m in the props in the App component'
     }
   },
-  data () {
+  data() {
     return {
       msg: 'This is not the framework you\'re looking for',
       text: 'Maybe you should text a friend...',
@@ -34,11 +32,6 @@ export default {
     // components: {
     //   App, Crap
     // }
-  },
-  methods: {
-    pressed: (e) => {
-      console.log(e.target.value)
-    }
   }
 }
 </script>

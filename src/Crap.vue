@@ -1,22 +1,21 @@
 <template>
   <div id="something">
     <h1> {{ msg }} </h1>
-    <!-- <app></app> -->
+    <app-input></app-input>
   </div>
 </template>
 
 <script>
-
-// import App from './src/App.vue'
+import Input from './Input.vue'
 
 export default {
   name: 'something',
-  // components: {
-  //   App
-  // },
+  components: {
+    'app-input': Input//app-input is the selector - basically the name. A locally registered component
+  },
   data() {
     return {
-      msg: 'fdjkfdnsfndslfdsfldsfnlsd'
+      msg: 'I\'m the Crap component'
     }
   }
 }
