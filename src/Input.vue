@@ -1,7 +1,7 @@
 <template>
   <div>
     <form class="user-input-form">
-      <p>Input component called through the Crap component</p>
+      <p>Input component called through the Hook component</p>
       <input type="text" v-model="message" id="user-input" placeholder="No typing" v-on:keyup="pressed">
       <button>send</button>
       <p>{{ message }}</p>
@@ -23,3 +23,9 @@
   }
   }
 </script>
+
+<style>
+  p {
+    color: purple;
+  }
+</style>

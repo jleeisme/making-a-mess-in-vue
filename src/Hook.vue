@@ -1,6 +1,6 @@
 <template>
   <div id="something">
-    <h1> {{ msg }} </h1>
+    <h3> {{ msg }} </h3>
     <app-input></app-input>
   </div>
 </template>
@@ -15,14 +15,14 @@ export default {
   },
   data() {
     return {
-      msg: 'I\'m the Crap component'
+      msg: 'I\'m the Hook component'
     }
   }
 }
 </script>
 
 <style scoped>
-  h1 {
+  h3 {
     color: red;
   }
 

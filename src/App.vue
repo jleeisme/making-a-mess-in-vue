@@ -5,7 +5,7 @@
     <h2>{{ text }}</h2>
     <h3>{{ text2 }}</h3>
     <h2>{{ hey }}</h2>
-    <app-crap></app-crap>
+    <app-hook></app-hook>
     <!-- <something></something> -->
     
   </div>
@@ -46,8 +46,9 @@ export default {
   margin-top: 60px;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: normal;
+  color: orange;
 }
 
 ul {

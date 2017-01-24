@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Crap from './Crap.vue'
+import Hook from './Hook.vue'
 
-Vue.component('app-crap', Crap)//this is now a global component
+Vue.component('app-hook', Hook)//this is now a global component
 
 new Vue({
   el: '#app',//the div in index.html which we change
