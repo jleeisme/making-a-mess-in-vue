@@ -4,31 +4,46 @@
     <h1>{{ msg }}</h1>
     <h2>{{ text }}</h2>
     <h3>{{ text2 }}</h3>
+    <h2>{{ hey }}</h2>
     <!-- <something></something> -->
     <form class="user-input-form">
-      <input type="text" id="user-input" placeholder="message">
+      <input type="text" id="user-input" placeholder="no typing" v-on:keyup="pressed">
       <button>send</button>
     </form>
   </div>
 </template>
 
 <script>
-// import Crap from './Crap.vue'
+// import Crap from './src/Crap'
 
 export default {
 
   name: 'app',
+  props: {
+    hey: {
+      type: String,
+      default: 'I\'m in the props'
+    }
+  },
   data () {
     return {
       msg: 'This is not the framework you\'re looking for',
       text: 'Maybe you should text a friend...',
       text2: 'Or not...'
     }
+    // components: {
+    //   App, Crap
+    // }
+  },
+  methods: {
+    pressed: (e) => {
+      console.log(e.target.value)
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
