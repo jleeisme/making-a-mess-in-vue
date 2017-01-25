@@ -1,21 +1,16 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
     <h1>{{ msg }}</h1>
-    <h2>{{ text }}</h2>
-    <h3>{{ text2 }}</h3>
+    <!-- <h2>{{ text }}</h2> -->
+    <!-- <h3>{{ text2 }}</h3> -->
     <h2>{{ hey }}</h2>
-    <app-hook></app-hook>
-    <!-- <something></something> -->
-    
+    <app-hook></app-hook>    
   </div>
 </template>
 
 <script>
-// import Crap from './src/Crap'
 
 export default {
-
   name: 'app',
   props: {
     hey: {
@@ -25,13 +20,10 @@ export default {
   },
   data() {
     return {
-      msg: 'This is not the framework you\'re looking for',
-      text: 'Maybe you should text a friend...',
-      text2: 'Or not...'
+      msg: 'Data msg returned in the App component',
+      // text: 'Maybe you should text a friend...'
+      // text2: 'Or not...'
     }
-    // components: {
-    //   App, Crap
-    // }
   }
 }
 </script>
