@@ -4,7 +4,10 @@
     <!-- <h2>{{ text }}</h2> -->
     <!-- <h3>{{ text2 }}</h3> -->
     <h2>{{ hey }}</h2>
+    <hr>
     <app-hook></app-hook>    
+    <router-view></router-view>
+
   </div>
 </template>
 

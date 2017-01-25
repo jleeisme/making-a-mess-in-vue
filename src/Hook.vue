@@ -2,6 +2,7 @@
   <div id="something">
     <h3> {{ msg }} </h3>
     <app-input :text="text"></app-input>
+    <hr>
     <!-- bind the text so it can be used in the Input component -->
   </div>
 </template>
