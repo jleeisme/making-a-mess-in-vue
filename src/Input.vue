@@ -4,7 +4,7 @@
       <p>Input component called through the Hook component</p>
       <p class="text">{{ text }}</p>
       <input type="text" v-model="message" id="user-input" placeholder="No typing" v-on:keyup="pressed">
-      <router-link to="/users">clickless</router-link>
+      <router-link to="/users">To Users component</router-link>
       <!-- not yet linked -->
       <p class="message">{{ message }}</p>
     </form>
