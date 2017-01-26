@@ -18,12 +18,12 @@ export default {
   props: {
     hey: {
       type: String,
-      default: 'I\'m in the props in the App component'
+      default: `I'm in the props in the App component`
     }
   },
   data() {
     return {
-      msg: 'Data msg returned in the App component',
+      msg: `Data msg returned in the App component`,
       // text: 'Maybe you should text a friend...'
       // text2: 'Or not...'
     }

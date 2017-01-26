@@ -9,7 +9,7 @@
       <p class="message">{{ message }}</p>
     </form>
   </div>
-</template>
+</template>  
 
 <script>
   export default {
@@ -19,7 +19,7 @@
         message: ''
       }
     },
-    methods: {
+    methods: { 
       pressed(e) {
         console.log(e.target.value)
       }
