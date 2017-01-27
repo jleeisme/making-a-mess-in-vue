@@ -1,6 +1,6 @@
 <template>
   <div id="something">
-    <h3> {{ msg }} </h3>
+    <h3>{{ msg }}</h3>
     <hr>
     <app-input :text="text"></app-input>
     <hr>
