@@ -1,6 +1,6 @@
 <template>
   <div id="something">
-    <h3> {{ msg }} </h3>
+    <h3>{{ msg }}</h3>
     <hr>
     <app-input :text="text"></app-input>
     <hr>
@@ -18,8 +18,8 @@ export default {
   },
   data() {
     return {
-      msg: 'I\'m the Hook component',
-      text: 'Bound from Hook, used as a prop in Input component and called there'
+      msg: `I'm the Hook component`,
+      text: `Bound from Hook, used as a prop in Input component and called there`
     }
   }
 }

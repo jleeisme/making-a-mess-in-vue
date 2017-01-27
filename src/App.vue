@@ -1,9 +1,9 @@
 <template>
   <div id="app">
+    <h2>{{ info }}</h2>
     <h1>{{ msg }}</h1>
-    <!-- <h2>{{ text }}</h2> -->
     <!-- <h3>{{ text2 }}</h3> -->
-    <h2>{{ hey }}</h2>
+    <h3>{{ hey }}</h3>
     <hr>
     <app-hook></app-hook>    
     <router-view></router-view>
@@ -18,12 +18,13 @@ export default {
   props: {
     hey: {
       type: String,
-      default: 'I\'m in the props in the App component'
+      default: `I'm in the props in the App component`
     }
   },
   data() {
     return {
-      msg: 'Data msg returned in the App component',
+      msg: `Data msg returned in the App component`,
+      info: `App component, the entry point`
       // text: 'Maybe you should text a friend...'
       // text2: 'Or not...'
     }
@@ -41,9 +42,13 @@ export default {
   margin-top: 60px;
 }
 
-h1, h2, h3 {
+h1 {
   font-weight: normal;
   color: orange;
+}
+
+h3 {
+  color: green;
 }
 
 ul {

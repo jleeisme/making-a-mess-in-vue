@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Users Overview</h2>
+    <h2>This is Users</h2>
     <button @click="goHome">To Home component</button>
   </div>
 </template>
