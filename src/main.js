@@ -7,6 +7,9 @@ import Home from './Home.vue'
 
 Vue.use(VueRouter)
 
+// these two components share the same 'space' through
+// the <router-view> so their views show when called on and 
+// the other, doesn't
 const routes = [
   { path: '/users', component: Users },
   { path: '/', component: Home }
