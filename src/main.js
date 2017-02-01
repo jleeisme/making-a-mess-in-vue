@@ -4,6 +4,7 @@ import App from './App.vue'
 import Hook from './Hook.vue'
 import Users from './Users.vue'
 import Home from './Home.vue'
+import Losers from './Losers.vue'
 
 Vue.use(VueRouter)
 
@@ -12,7 +13,8 @@ Vue.use(VueRouter)
 // the other, doesn't
 const routes = [
   { path: '/users', component: Users },
-  { path: '/', component: Home }
+  { path: '/', component: Home },//changing the path url here has no effect on the actual url it seems
+  { path: '/losers', component: Losers }
 ]
 
 const router = new VueRouter({
