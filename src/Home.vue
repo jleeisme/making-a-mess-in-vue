@@ -1,3 +1,12 @@
 <template>
-  <h3>This is Home</h3>
+  <div>
+    <h3>This is Home</h3>
+    <router-link to="/users">To the Users</router-link>
+  </div>
 </template>
+
+<script>
+  export default{
+
+  }
+</script>
