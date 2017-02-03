@@ -3,6 +3,7 @@
     <h2>This is Users</h2>
     <button @click="goHome">To Home component</button>
     <button @click="goLosers">Go to Losers</button>
+    <router-link to="/hello">To Hello component</router-link>
   </div>
 </template>
 

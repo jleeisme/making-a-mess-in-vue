@@ -3,6 +3,7 @@
     <h2>{{ info }}</h2>
     <h1>{{ msg }}</h1>
     <h3>{{ hey }}</h3>
+    <!-- <router-view></router-view> -->
     <hr>
     <app-hook></app-hook>    
     <router-view></router-view>
