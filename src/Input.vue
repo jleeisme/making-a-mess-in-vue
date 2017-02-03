@@ -28,6 +28,10 @@
 </script>
 
 <style>
+  input:focus {
+    outline: none;
+  }
+
   p {
     color: purple;
   }

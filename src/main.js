@@ -5,6 +5,7 @@ import Hook from './Hook.vue'
 import Users from './Users.vue'
 import Home from './Home.vue'
 import Losers from './Losers.vue'
+import Hello from './Hello.vue'
 
 Vue.use(VueRouter)
 
@@ -12,9 +13,10 @@ Vue.use(VueRouter)
 // the <router-view> so their views show when called on and 
 // the other, doesn't
 const routes = [
-  { path: '/users', component: Users },
   { path: '/', component: Home },//changing the path url here has no effect on the actual url it seems
-  { path: '/losers', component: Losers }
+  { path: '/users', component: Users },
+  { path: '/losers', component: Losers },
+  { path: '/hello', component: Hello }
 ]
 
 const router = new VueRouter({
