@@ -2,7 +2,6 @@
   <div id="app">
     <h2>{{ info }}</h2>
     <h1>{{ msg }}</h1>
-    <!-- <h3>{{ text2 }}</h3> -->
     <h3>{{ hey }}</h3>
     <hr>
     <app-hook></app-hook>    
@@ -26,7 +25,6 @@ export default {
       msg: `Data msg returned in the App component`,
       info: `App component, the entry point`
       // text: 'Maybe you should text a friend...'
-      // text2: 'Or not...'
     }
   }
 }

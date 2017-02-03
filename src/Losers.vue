@@ -6,12 +6,3 @@
   </div>
 </template>
 
-<script>
-  export default {
-    // methods: {
-    //   goLosers() {
-    //     this.$router.push('/losers')
-    //   }
-    // }
-  }
-</script>
