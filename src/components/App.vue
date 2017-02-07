@@ -6,7 +6,9 @@
     <!-- <router-view></router-view> -->
     <hr>
     <app-hook></app-hook>    
-    <router-view></router-view>
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
 
   </div>
 </template>
@@ -62,5 +64,15 @@ li {
 
 a {
   color: #42b983;
+}
+</style>
+
+<style>
+  
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 </style>
