@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import App from './App.vue'
-import Hook from './Hook.vue'
-import Users from './Users.vue'
-import Home from './Home.vue'
-import Losers from './Losers.vue'
-import Hello from './Hello.vue'
+import App from './components/App.vue'
+import Hook from './components/Hook.vue'
+import Users from './components/Users.vue'
+import Home from './components/Home.vue'
+import Losers from './components/Losers.vue'
+import Hello from './components/Hello.vue'
 
 Vue.use(VueRouter)
 
