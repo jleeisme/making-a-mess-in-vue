@@ -6,6 +6,7 @@ import Users from './components/Users.vue'
 import Home from './components/Home.vue'
 import Losers from './components/Losers.vue'
 import Hello from './components/Hello.vue'
+import End from './components/End.vue'
 
 Vue.use(VueRouter)
 
@@ -16,7 +17,8 @@ const routes = [
   { path: '/', component: Home },//changing the path url here has no effect on the actual url it seems
   { path: '/users', component: Users },
   { path: '/losers', component: Losers },
-  { path: '/hello', component: Hello }
+  { path: '/hello', component: Hello },
+  { path: '/end', component: End }
 ]
 
 const router = new VueRouter({
