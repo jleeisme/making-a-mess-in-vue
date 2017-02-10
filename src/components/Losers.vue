@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h2>I'm a loser</h2>
+      <h2>I'm a loser and this is my component</h2>
             
     <!-- <button @click="goLosers">Go to the losers</button> -->
     <!-- <transition name="slide-fade"> -->
