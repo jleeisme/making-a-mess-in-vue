@@ -4,12 +4,10 @@
     <!-- a click will activate the appropriate method which pushes the url link -->
     <button @click="goHome">Go to Home component</button>
     <button @click="goLosers">Go to Losers component</button>
-    <button @click="goHello">Go to Hello component</button>
-    
-    <transition name="slide-fade" mode="out-in">
-    <div class="box" @click="attachColour = !attachColour" :class="switchClasses" :style="boxChange"> Click </div>
-    </transition>
-    <input type="text" placeholder="adjust the box width" v-model="width">
+    <button @click="goHello">Go to Hello component</button>    
+    <div class="box" @click="attachColour = !attachColour" :class="switchClasses" :style="[boxChange, {height: width + 'px'}]"> Click... !> 300 </div>
+    <!-- in the array, the height is set to be what the width has been set to. -->
+    <input type="text" v-model="width" placeholder="adjust the box width">
 
   </div>  
 </template>
@@ -42,30 +40,18 @@ export default {
       }
     },
     boxChange() {
-      return {
+      return{
         width: this.width + 'px'
       }
     }
-  }
+  }  
 }
 </script>
 
 <style>
-  
-  /*.slide-fade-enter-active {
-    transition: all .3s ease;
-  }
-
-  .slide-fade-leave-active {
-    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-  }
-
-  .slide-fade-enter, .slide-fade-leave-to {
-    transform: translateX(10px);
-    opacity: 0;
-  }*/
-
   .box {
+    max-width: 300px;
+    max-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
