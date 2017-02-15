@@ -5,7 +5,11 @@
     <button @click="goHome">Go to Home component</button>
     <button @click="goLosers">Go to Losers component</button>
     <button @click="goHello">Go to Hello component</button>
-    <div class="box" @click="attachColour = !attachColour" :class="switchClasses"> Click </div>
+    
+    <transition name="slide-fade" mode="out-in">
+    <div class="box" @click="attachColour = !attachColour" :class="switchClasses" :style="boxChange"> Click </div>
+    </transition>
+    <input type="text" placeholder="adjust the box width" v-model="width">
 
   </div>  
 </template>
@@ -26,7 +30,8 @@ export default {
   data() {
     return {
       // color: 'red',
-      attachColour: false
+      attachColour: false,
+      width: 100
     }
   },
   computed: {
@@ -35,12 +40,31 @@ export default {
         red: this.attachColour,
         black: !this.attachColour
       }
+    },
+    boxChange() {
+      return {
+        width: this.width + 'px'
+      }
     }
   }
 }
 </script>
 
 <style>
+  
+  /*.slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+
+  .slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+  }*/
+
   .box {
     display: flex;
     align-items: center;
@@ -50,6 +74,7 @@ export default {
 /*    background-color: grey;*/
     margin: 10px auto;
     color: white;
+    /*transition: opacity .5s;*/
   }
 
   .black {
