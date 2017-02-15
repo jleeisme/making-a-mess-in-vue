@@ -25,7 +25,6 @@ export default {
     return {
       msg: `Data msg returned in the App component`,
       info: `App component, the entry point`
-      // text: 'Maybe you should text a friend...'
     }
   }
 }
