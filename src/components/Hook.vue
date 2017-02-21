@@ -25,9 +25,7 @@ export default {
 </script>
 
 <style scoped>
-
   h3 {
     color: red;
   }
-
 </style>
