@@ -68,6 +68,10 @@ export default {
     color: white;
   }
 
+  button {
+    font-family: monospace;
+  }
+
   .black {
     background-color: black;
   }
