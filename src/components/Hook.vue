@@ -21,7 +21,7 @@ export default {
       text: `Bound from Hook, used as a prop in Input component and called there`
     }
   }
-}
+};
 </script>
 
 <style scoped>

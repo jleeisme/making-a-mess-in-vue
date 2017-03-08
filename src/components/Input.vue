@@ -16,7 +16,7 @@
 
 <script>
   export default {
-    props: ['text'],
+    props: ['text'], // this props is from Hook.vue
     data() {
       return {
         message: ''
@@ -24,15 +24,15 @@
     },
     methods: { 
       pressed(e) {
-        console.log(e.target.value)
+        console.log(e.target.value);
       }
     },
     computed: {
       order() {
-        return this.message != `stop` ? `What's the opposite of go?` : `Stop of course!`
+        return this.message != `stop` ? `What's the opposite of go?` : `Stop of course!`;
       }
     }
-  }
+  };
 </script>
 
 <style>

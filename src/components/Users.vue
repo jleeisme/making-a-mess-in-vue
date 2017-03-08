@@ -21,13 +21,13 @@
 export default {
   methods: {
     goHome() {
-      this.$router.push('/')//home url can be changed to whatever is entered here
+      this.$router.push('/'); //home url can be changed to whatever is entered here
     },  
     goLosers() {
-      this.$router.push('/losers')
+      this.$router.push('/losers');
     },
     goHello() {
-      this.$router.push('/hello')
+      this.$router.push('/hello');
     }
   },
   data() {
@@ -45,12 +45,12 @@ export default {
       }
     },
     boxChange() {
-      return{
+      return {
         width: this.width + 'px'
       }
     }
   }  
-}
+};
 </script>
 
 <style>

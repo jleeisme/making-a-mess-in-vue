@@ -6,6 +6,7 @@
     <hr>
     <app-hook></app-hook>    
     <transition name="fade" mode="out-in">
+      <!-- all the linked routes are run through the router-view -->
       <router-view></router-view>
     </transition>
   </div>
@@ -27,7 +28,7 @@ export default {
       info: `App component, the entry point`
     }
   }
-}
+};
 </script>
 
 <style scoped>
