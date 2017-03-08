@@ -22,11 +22,13 @@
         message: ''
       }
     },
+
     methods: { 
       pressed(e) {
         console.log(e.target.value);
       }
     },
+    
     computed: {
       order() {
         return this.message != `stop` ? `What's the opposite of go?` : `Stop of course!`;

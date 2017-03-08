@@ -10,11 +10,11 @@ import End from './components/End.vue'
 
 Vue.use(VueRouter);
 
-// these two components share the same 'space' through
-// the <router-view> so their views show when called on and 
-// the other, doesn't
+// these components share the same 'space' through
+// the <router-view> so its views shows when called on and 
+// the others, don't
 const routes = [
-  { path: '/', component: Home },//changing the path url here has no effect on the actual url it seems
+  { path: '/', component: Home }, //changing the path url here has no effect on the actual url it seems
   { path: '/users', component: Users },
   { path: '/losers', component: Losers },
   { path: '/hello', component: Hello },

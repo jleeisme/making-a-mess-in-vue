@@ -6,7 +6,7 @@
     <hr>
     <app-hook></app-hook>    
     <transition name="fade" mode="out-in">
-      <!-- all the linked routes are run through the router-view -->
+      <!-- all the linked routes are run through the router-view where they share the same 'space' -->
       <router-view></router-view>
     </transition>
   </div>
@@ -22,6 +22,7 @@ export default {
       default: `I'm in the props in the App component`
     }
   },
+  
   data() {
     return {
       msg: `Data msg returned in the App component`,

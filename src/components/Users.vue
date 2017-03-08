@@ -6,13 +6,11 @@
     <button @click="goHome">Go to Home component</button>
     <button @click="goLosers">Go to Losers component</button>
     <button @click="goHello">Go to Hello component</button>    
-    <div class="box" @click="attachColour = !attachColour" 
-      :class="switchClasses" :style="[boxChange, {height: width + 'px'}]">
-      <!-- in the array, the height is set to be what the width has been set to. -->
-       
+    <div class="box" @click="attachColour = !attachColour"
+      :class="switchClasses" :style="[boxChange, {height: width + 'px'}]">       
+      <!-- in the array, the height is set to be what the width has been set to. --> 
       Click... !> 300 
     </div>
-    
     <input type="text" v-model="width" placeholder="adjust the box width">
   </div>  
 </template>
@@ -30,17 +28,19 @@ export default {
       this.$router.push('/hello');
     }
   },
+
   data() {
     return {
-      // color: 'red',
+      // color: 'plum',
       attachColour: false,
       width: 100
     }
   },
+
   computed: {
     switchClasses() {
       return {
-        red: this.attachColour,
+        plum: this.attachColour,
         black: !this.attachColour
       }
     },
@@ -66,17 +66,18 @@ export default {
     width: 100px;
     margin: 10px auto;
     color: white;
+    transition: .5s ease;
   }
 
   button {
-    font-family: monospace;
+    font-family: Monaco;
   }
 
   .black {
     background-color: black;
   }
 
-  .red {
-    background-color: red;
+  .plum {
+    background-color: plum;
   }
 </style>
