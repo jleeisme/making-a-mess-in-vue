@@ -6,6 +6,7 @@
     <hr>
     <app-hook></app-hook>    
     <transition name="fade" mode="out-in">
+      <!-- all the linked routes are run through the router-view where they share the same 'space' -->
       <router-view></router-view>
     </transition>
   </div>
@@ -21,13 +22,14 @@ export default {
       default: `I'm in the props in the App component`
     }
   },
+  
   data() {
     return {
       msg: `Data msg returned in the App component`,
       info: `App component, the entry point`
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -64,11 +66,11 @@ a {
 }
 </style>
 
-<style>
-  
+<style> 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s
 }
+
 .fade-enter, .fade-leave-active {
   opacity: 0
 }

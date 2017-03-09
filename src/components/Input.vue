@@ -9,30 +9,31 @@
       <p class="message">{{ message }}</p>
       <p class="order">{{ order }}</p>
       <router-link class="linky" to="/users">To Users component</router-link>
-      <!-- to= can be bound by :to and then direct to the link via a variable, but this is the whole path, so for now nbd -->
     </form>
   </div>
 </template>  
 
 <script>
   export default {
-    props: ['text'],
+    props: ['text'], // this props is from Hook.vue
     data() {
       return {
         message: ''
       }
     },
+
     methods: { 
       pressed(e) {
-        console.log(e.target.value)
+        console.log(e.target.value);
       }
     },
+
     computed: {
       order() {
-        return this.message != `stop` ? `What's the opposite of go?` : `Stop of course!`
+        return this.message != `stop` ? `What's the opposite of go?` : `Stop of course!`;
       }
     }
-  }
+  };
 </script>
 
 <style>
@@ -59,5 +60,4 @@
   .linky {
     color: #a2bc55;
   }
-
 </style>
