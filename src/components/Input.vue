@@ -9,7 +9,6 @@
       <p class="message">{{ message }}</p>
       <p class="order">{{ order }}</p>
       <router-link class="linky" to="/users">To Users component</router-link>
-      <!-- to= can be bound by :to and then direct to the link via a variable, but this is the whole path, so for now nbd -->
     </form>
   </div>
 </template>  
@@ -28,7 +27,7 @@
         console.log(e.target.value);
       }
     },
-    
+
     computed: {
       order() {
         return this.message != `stop` ? `What's the opposite of go?` : `Stop of course!`;

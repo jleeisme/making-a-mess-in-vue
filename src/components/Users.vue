@@ -33,7 +33,7 @@ export default {
     return {
       // color: 'plum',
       attachColour: false,
-      width: 100
+      width: ''
     }
   },
 
