@@ -6,8 +6,10 @@
     <button @click="goHome">Go to Home component</button>
     <button @click="goLosers">Go to Losers component</button>
     <button @click="goHello">Go to Hello component</button>    
-    <div class="box" @click="attachColour = !attachColour"
-      :class="switchClasses" :style="[boxChange, {height: width + 'px'}]">       
+    <div class="box" 
+      @click="attachColour = !attachColour"
+      :class="switchClasses" 
+      :style="[boxChange, {height: width + 'px'}]">       
       <!-- in the array, the height is set to be what the width has been set to. --> 
       Click... 
     </div>
